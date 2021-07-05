@@ -1,5 +1,6 @@
-package com.my.blog.model;
+package com.my.blog.test;
 
+import com.my.blog.model.User;
 import com.my.blog.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
