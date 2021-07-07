@@ -1,5 +1,7 @@
-# 나만의 blog만들기
+# blog
 
 Springboot
+
 JSP
+
 Thymeleaf
