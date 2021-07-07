@@ -1,9 +1,9 @@
 # blog
 
-Springboot
+SpringbootCancel changes
 
 MySQL
-(+JSP더할거같긴한데)
+(+JPA더할거같긴한데)
 
 Thymeleaf
 
