@@ -2,7 +2,8 @@
 
 Springboot
 
-JSP
+MySQL
+(+JSP더할거같긴한데)
 
 Thymeleaf
 
