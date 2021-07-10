@@ -9,22 +9,23 @@
 <body>
 <div th:replace="fragments/header" />
 <div class="container">
-  <form action="/action_page.php">
+  <form>
     <div class="form-group">
       <label for="username">Username</label>
       <input type="text" class="form-control" placeholder="Enter username" id="username">
     </div>
     <div class="form-group">
       <label for="pwd">Password</label>
-      <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+      <input type="password" class="form-control" placeholder="Enter password" id="password">
     </div>
     <div class="form-group">
       <label for="email">Email address</label>
       <input type="email" class="form-control" placeholder="Enter email" id="email">
     </div>
-    <button type="submit" class="btn btn-primary">회원가입</button>
   </form>
+  <button id="btn-save" class="btn btn-primary">회원가입</button> <!--폼밖으로 빼라 안그러면 submit됨..!-->
 </div>
+<script src="/blog/js/user.js"></script>
 <div th:replace="fragments/footer" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

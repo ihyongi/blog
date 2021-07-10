@@ -8,27 +8,31 @@
 </head>
 <body>
 <div th:replace="fragments/header" />
+
 <div class="container">
-  <form action="/action_page.php">
+  <form>
     <div class="form-group">
-      <label for="username">Username</label>
+      <label for="username">username:</label>
       <input type="text" class="form-control" placeholder="Enter username" id="username">
     </div>
     <div class="form-group">
-      <label for="pwd">Password</label>
-      <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" placeholder="Enter password" id="password">
     </div>
     <div class="form-group form-check">
       <label class="form-check-label">
         <input class="form-check-input" type="checkbox"> Remember me
       </label>
     </div>
-    <button type="submit" class="btn btn-primary">로그인</button>
   </form>
+  <button id="btn-login" class="btn btn-primary">로그인</button>
 </div>
+<script src="/blog/js/user.js"/>
+<br>
 <div th:replace="fragments/footer" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
