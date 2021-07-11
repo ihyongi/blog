@@ -24,8 +24,8 @@ public class Board {
     private String title;
     @Lob //대용량데이터
     private String content; //섬머노트라이브러리<html> 섞여서 디자인이 됨
-    @ColumnDefault("0")
-    private int count;//조회수
+
+    private int count;//조회수는 강제로 넣을 것
 
     @ManyToOne(fetch = FetchType.EAGER)//many:board, one:user , 기본전략이 eager
     @JoinColumn(name = "userId")
