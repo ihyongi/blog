@@ -18,6 +18,12 @@
     </div>
 </div>
 
+<ul class="pagination justify-content-center"> <!--시작은 start, 끝으로 보내고 싶으면 end-->
+    <li class="page-item"><a class="page-link" th:href="@{'/?page='+${boards.number-1}}">Previous</a></li>
+    <li class="page-item"><a class="page-link" th:href="@{'/?page='+${boards.number+1}}">Next</a></li>
+    <!-- http://localhost:8000/?page=board.number1 이렇게 나오는디...href="/?page=${board.number+1}", 마지막페이지 비활성화?-->
+</ul>
+
 <div th:replace="fragments/footer" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
